@@ -30,7 +30,7 @@ def unique(m)
     n = mu.length
     n.times do |i|
         if m.count(mu[i]) == 1
-            salida = "[#{mu[i]}, #{m.index(mu[i])}]"
+            salida = "unique(#{m}) --> [#{mu[i]}, #{m.index(mu[i])}]"
         end
     end
     print salida
