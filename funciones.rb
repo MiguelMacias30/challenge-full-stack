@@ -22,3 +22,17 @@ def find(m)
 end
 find(["lourdes","lauren","Bob","lindsey"])
 puts
+
+#3 Ejercicio
+def unique(m)
+    salida = "[]"
+    mu = m.uniq
+    n = mu.length
+    n.times do |i|
+        if m.count(mu[i]) == 1
+            salida = "[#{mu[i]}, #{m.index(mu[i])}]"
+        end
+    end
+    print salida
+end
+unique([1,1,6,6,6,3])
